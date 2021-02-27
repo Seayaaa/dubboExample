@@ -1,4 +1,4 @@
-package com.lsy.dubbo.comsumer.controller;
+package com.lsy.dubbo.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.lsy.dubbo.provider.service.HelloService;
