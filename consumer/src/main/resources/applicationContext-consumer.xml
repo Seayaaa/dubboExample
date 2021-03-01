@@ -17,7 +17,7 @@
     <!--为服务消费者在向注册中心订阅服务时起个名字-->
     <dubbo:application name="dubbodemo_consumer"/>
     <!--连接到zookeeper注册中心-->
-    <dubbo:registry address="zookeeper://127.0.0.1" port="2181"/>
+    <dubbo:registry address="zookeeper://192.168.150.130" port="2181"/>
     <!--开启包扫描，使dubbo的注解生效，让当前的被注解的类交给dubbo管理-->
     <dubbo:annotation package="com.alibaba.web.controller.consumer"/>
     
