@@ -93,9 +93,18 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.5.RELEASE</version>
                 <configuration>
-                    <mainClass>com.lsy.dubbo.provider.ProviderApplication</mainClass>
                     <executable>true</executable>
+                    <includeSystemScope>true</includeSystemScope>
+                    <mainClass>com.lsy.dubbo.provider.ProviderApplication</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
