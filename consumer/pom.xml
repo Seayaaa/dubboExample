@@ -94,9 +94,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.5.RELEASE</version>
                 <configuration>
-                    <executable>true</executable>
-                    <includeSystemScope>true</includeSystemScope>
-                    <mainClass>com.lsy.dubbo.consumer.ConsumerApplication</mainClass>
+                    <classifier>exec</classifier>
                 </configuration>
                 <executions>
                     <execution>
