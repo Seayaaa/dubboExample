@@ -16,7 +16,7 @@
     <!--指定zookeeper注册中心的address和port，如果使用的是redis则address使用redis的address-->
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--协议必须使用dubbo，端口号是提供一个可供消费者使用的端口-->
-    <dubbo:protocol name="dubbo" port="20881"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
     <!--开启注解扫描，使dubbo的注解生效-->
     <dubbo:annotation package="com.lsy.dubbo.provider"/>
     <!-- 声明需要暴露的服务接口 -->
