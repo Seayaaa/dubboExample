@@ -24,4 +24,9 @@ public class HelloController {
         System.out.println(result);
         return result;
     }
+    
+    @RequestMapping("/isWeekend")
+    public String isWeekend(String year, String month, String day) {
+        return "是周末";
+    }
 }
